@@ -1,0 +1,19 @@
+.erreur {
+    text-align: center;
+    color: #ff6060;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 80px;
+    .erreur__title {
+        font-size: 288px;
+    }
+    .erreur__message {
+        font-size: 36px;
+    }
+    .erreur__link {
+        font-size: 18px;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
