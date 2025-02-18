@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px;
+    .navbar {
+        .navbar__link {
+            padding-left: 30px;
+            text-decoration: none;
+            .navbar__link--underline {
+                text-decoration: underline;
+            }
+        }
+    }
+}

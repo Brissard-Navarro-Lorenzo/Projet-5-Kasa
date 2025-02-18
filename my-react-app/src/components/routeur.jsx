@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Erreur from "../pages/Erreur";
 import About from "../pages/About";
 import Header from "./header";
+import Footer from "./footer";
 
 export default function Routeur() {
     return (
@@ -14,6 +15,7 @@ export default function Routeur() {
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<Erreur />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
