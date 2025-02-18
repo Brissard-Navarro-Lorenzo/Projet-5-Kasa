@@ -7,7 +7,9 @@
         .navbar__link {
             padding-left: 30px;
             text-decoration: none;
-            .navbar__link--underline {
+            color: black;
+            font-size: 24px;
+            &--underline {
                 text-decoration: underline;
             }
         }
