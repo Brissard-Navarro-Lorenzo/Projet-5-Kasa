@@ -5,6 +5,7 @@ import Erreur from "../pages/Erreur";
 import About from "../pages/About";
 import Header from "./header";
 import Footer from "./footer";
+import Logement from "../pages/Logement";
 
 export default function Routeur() {
     return (
@@ -13,6 +14,7 @@ export default function Routeur() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/logement/:id" element={<Logement />} />
                 <Route path="*" element={<Erreur />} />
             </Routes>
             <Footer />
