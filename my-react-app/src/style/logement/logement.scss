@@ -1,0 +1,33 @@
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__titre {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &__h1 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #ff6060;
+        }
+        &__h2 {
+            font-size: 18px;
+            color: black;
+        }
+    }
+    &__host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        &__h3 {
+            color: #ff6060;
+            font-size: 18px;
+        }
+        &__img {
+            border-radius: 65px;
+        }
+    }
+}
