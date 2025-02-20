@@ -4,6 +4,7 @@ import Collapse from "../../components/collapse";
 import "../../style/logement/logement.scss";
 import Tag from "../../components/tag";
 import Rating from "../../components/rating";
+import Slideshow from "../../components/slideshow";
 
 export default function Logement() {
     const { id } = useParams();
@@ -11,6 +12,7 @@ export default function Logement() {
     const note = parseInt(logementEnCours.rating);
     return (
         <main className="main">
+            <Slideshow tableau_images={logementEnCours.pictures} alt={logementEnCours.title} />
             <section className="logement">
                 <div className="logement__contenu">
                     <div className="infos">

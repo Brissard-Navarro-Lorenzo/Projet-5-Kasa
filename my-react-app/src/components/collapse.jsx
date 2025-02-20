@@ -4,9 +4,9 @@ import "../style/collapse/collapse.scss";
 export default function Collapse({ header, content }) {
     const [ouvert, setOuvert] = useState(false);
 
-    const ChangementEtatCollapse = () => {
+    function ChangementEtatCollapse() {
         setOuvert(!ouvert);
-    };
+    }
     return (
         <div className="collapse">
             <div className="collapse__header">
