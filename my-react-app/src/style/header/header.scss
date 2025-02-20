@@ -5,12 +5,16 @@
     margin: 30px 100px;
     .navbar {
         .navbar__link {
-            padding-left: 30px;
+            margin-left: 30px;
             text-decoration: none;
             color: black;
             font-size: 24px;
+            transition: 0.3s ease;
             &--underline {
                 text-decoration: underline;
+            }
+            &:hover {
+                color: #ff6060;
             }
         }
     }

@@ -7,4 +7,10 @@
     margin-top: 50px;
     text-align: center;
     padding: 55px 50px;
+    & > a {
+        transition: 0.3s ease-in-out;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
 }
