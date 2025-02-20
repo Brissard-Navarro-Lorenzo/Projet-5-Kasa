@@ -1,8 +1,13 @@
-.infos {
+.logement__contenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    margin: 40px 0;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     &__titre {
         display: flex;
         flex-direction: column;
@@ -17,17 +22,39 @@
             color: black;
         }
     }
+}
+.references {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
     &__host {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 15px;
+        width: 167px;
         &__h3 {
             color: #ff6060;
             font-size: 18px;
+            margin-right: 8px;
+            text-align: end;
         }
         &__img {
             border-radius: 65px;
+            height: 64px;
+            width: 64px;
         }
+    }
+    &__ratings {
+        display: flex;
+        gap: 10px;
+    }
+}
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__collapse {
+        width: 45%;
     }
 }
