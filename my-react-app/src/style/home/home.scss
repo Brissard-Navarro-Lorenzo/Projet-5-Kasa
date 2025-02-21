@@ -7,6 +7,17 @@
     margin-top: 50px;
     text-align: center;
     padding: 55px 50px;
+    @media (max-width: 1380px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+    }
+    @media (max-width: 768px) {
+        background-color: white;
+        margin: 20px 0;
+        padding: 0;
+    }
     & > a {
         transition: 0.3s ease-in-out;
         &:hover {

@@ -3,13 +3,25 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px 100px;
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
+    & img {
+        @media (max-width: 768px) {
+            width: 145px;
+        }
+    }
     .navbar {
-        .navbar__link {
+        &__link {
             margin-left: 30px;
             text-decoration: none;
             color: black;
             font-size: 24px;
             transition: 0.3s ease;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
             &--underline {
                 text-decoration: underline;
             }

@@ -17,4 +17,7 @@ body {
     margin: 50px 100px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
 }

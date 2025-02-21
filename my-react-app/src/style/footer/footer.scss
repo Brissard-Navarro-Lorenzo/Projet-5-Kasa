@@ -7,5 +7,11 @@
         margin-top: 40px;
         font-weight: 100;
         font-size: 22px;
+        @media (max-width: 768px) {
+            font-size: 12px;
+            width: 134px;
+            justify-self: center;
+            margin-top: 20px;
+        }
     }
 }

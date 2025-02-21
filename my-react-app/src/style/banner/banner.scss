@@ -3,14 +3,17 @@
     border-radius: 25px;
     position: relative;
     box-shadow: 0 4px 4px 0 #00000040;
-    .banner__img {
+    @media (max-width: 768px) {
+        height: 111px;
+    }
+    &__img {
         height: 100%;
         width: 100%;
         border-radius: 25px;
         object-fit: cover;
         filter: brightness(0.4);
     }
-    .banner__title {
+    &__title {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -20,5 +23,16 @@
         font-size: 48px;
         max-width: 100%;
         white-space: nowrap;
+        @media (max-width: 1024px) {
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+        @media (max-width: 500px) {
+            white-space: normal;
+            width: 225px;
+            left: 130px;
+        }
     }
 }
