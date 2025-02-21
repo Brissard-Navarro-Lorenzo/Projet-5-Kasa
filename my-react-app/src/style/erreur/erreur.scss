@@ -7,13 +7,23 @@
     margin-bottom: 80px;
     .erreur__title {
         font-size: 288px;
+        @media (max-width: 768px) {
+            font-size: 96px;
+            margin-top: 80px;
+        }
     }
     .erreur__message {
         font-size: 36px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
     }
     .erreur__link {
         font-size: 18px;
         color: #000000;
         text-decoration: underline;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }

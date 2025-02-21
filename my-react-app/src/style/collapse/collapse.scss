@@ -9,6 +9,11 @@
         color: #fff;
         line-height: 34px;
         padding: 10px 20px 10px 15px;
+        & h2 {
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+        }
     }
     &__icone {
         transition: transform 0.3s ease-in-out;

@@ -6,9 +6,9 @@ export default function Rating({ note }) {
         <>
             {tableau.map((nb) =>
                 note >= nb ? (
-                    <i className="fa-solid fa-star etoile etoile--rouge" key={nb}></i>
+                    <i className="fa-solid fa-star etoile--rouge" key={nb}></i>
                 ) : (
-                    <i className="fa-solid fa-star etoile etoile--grise" key={nb}></i>
+                    <i className="fa-solid fa-star etoile--grise" key={nb}></i>
                 )
             )}
         </>
