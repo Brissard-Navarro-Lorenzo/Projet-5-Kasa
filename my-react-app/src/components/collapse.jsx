@@ -16,7 +16,15 @@ export default function Collapse({ header, content }) {
                     onClick={ChangementEtatCollapse}></i>
             </div>
             <div className={`collapse__content collapse__content${ouvert ? "--ouvert" : ""}`}>
-                <p>{content}</p>
+                {Array.isArray(content) ? (
+                    <ul>
+                        {content.map((texte, index) => (
+                            <li key={`${texte}-${index}`}>{texte}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p>{content}</p>
+                )}
             </div>
         </div>
     );
