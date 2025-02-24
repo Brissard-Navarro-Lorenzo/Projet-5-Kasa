@@ -15,7 +15,7 @@ export default function Collapse({ header, content }) {
                     className={`fa-solid fa-chevron-up collapse__icone collapse__icone${ouvert ? "--ouverte" : "--fermee"}`}
                     onClick={ChangementEtatCollapse}></i>
             </div>
-            <div className={`collapse__content collapse__content${ouvert ? "--ouvert" : "--ferme"}`}>
+            <div className={`collapse__content collapse__content${ouvert ? "--ouvert" : ""}`}>
                 <p>{content}</p>
             </div>
         </div>

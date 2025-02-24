@@ -28,14 +28,16 @@
     }
 
     &__content {
-        padding: 12px 18px;
         background-color: #f1f1f1;
         font-size: 16px;
+        overflow: hidden;
+        transition: height 0.3s ease-out, padding 0.3s ease-out;
+        padding: 0 18px;
+        transform-origin: top;
+        height: 0;
         &--ouvert {
-            display: block;
-        }
-        &--ferme {
-            display: none;
+            padding: 12px 18px;
+            height: auto;
         }
     }
 }
