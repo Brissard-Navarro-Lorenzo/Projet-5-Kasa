@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router";
+import { useParams } from "react-router";
 import logements from "../../logements.json";
 import Collapse from "../../components/collapse";
 import "../../style/logement/logement.scss";
@@ -7,13 +7,10 @@ import Rating from "../../components/rating";
 import Slideshow from "../../components/slideshow";
 
 export default function Logement() {
-    // const navigate = useNavigate();
     const { id } = useParams();
     const logementEnCours = logements.find((logement) => logement.id === id);
     const note = parseInt(logementEnCours.rating);
-    // if (!logementEnCours) {
-    //     navigate("*");
-    // }
+
     return (
         <main className="main">
             <Slideshow tableau_images={logementEnCours.pictures} alt={logementEnCours.title} />
