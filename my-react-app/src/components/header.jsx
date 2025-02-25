@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router";
-import "../style/header/header.scss";
+import "../style/Header/Header.scss";
 import logo_Kasa from "../images/logo_kasa.svg";
 
 export default function Header() {

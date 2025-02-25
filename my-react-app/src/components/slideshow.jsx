@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style/slideshow/slideshow.scss";
+import "../style/Slideshow/Slideshow.scss";
 export default function Slideshow({ tableau_images, alt }) {
     const [index, setIndex] = useState(0);
     const tailleTableau = tableau_images.length;

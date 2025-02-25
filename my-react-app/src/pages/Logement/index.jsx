@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import logements from "../../logements.json";
 import Collapse from "../../components/collapse";
-import "../../style/logement/logement.scss";
+import "../../style/Logement/Logement.scss";
 import Tag from "../../components/tag";
 import Rating from "../../components/rating";
 import Slideshow from "../../components/slideshow";

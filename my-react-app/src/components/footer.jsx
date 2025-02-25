@@ -1,5 +1,5 @@
 import logo_Kasa_blanc from "../images/logo_kasa_blanc.svg";
-import "../style/footer/footer.scss";
+import "../style/Footer/Footer.scss";
 
 export default function Footer() {
     return (

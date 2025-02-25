@@ -1,7 +1,7 @@
 import Banner from "../../components/banner";
 import Collapse from "../../components/collapse";
 import montagnes_banner from "../../images/montagnes_banner.png";
-import "../../style/about/about.scss";
+import "../../style/About/About.scss";
 
 const contenuCollapse = [
     {

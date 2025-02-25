@@ -1,7 +1,7 @@
 import Banner from "../../components/banner";
 import Card from "../../components/card";
 import logements from "../../logements.json";
-import "../../style/home/home.scss";
+import "../../style/Home/Home.scss";
 import falaises_banner from "../../images/falaises_banner.png";
 import { Link } from "react-router";
 

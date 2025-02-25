@@ -1,4 +1,4 @@
-import "../style/rating/rating.scss";
+import "../style/Rating/Rating.scss";
 
 export default function Rating({ note }) {
     const tableau = [1, 2, 3, 4, 5];

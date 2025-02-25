@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style/collapse/collapse.scss";
+import "../style/Collapse/Collapse.scss";
 
 export default function Collapse({ header, content }) {
     const [ouvert, setOuvert] = useState(false);
