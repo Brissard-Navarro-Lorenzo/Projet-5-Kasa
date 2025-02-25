@@ -1,5 +1,5 @@
-import Banner from "../../components/banner";
-import Collapse from "../../components/collapse";
+import Banner from "../../components/Banner";
+import Collapse from "../../components/Collapse";
 import montagnes_banner from "../../images/montagnes_banner.png";
 import "../../style/About/About.scss";
 

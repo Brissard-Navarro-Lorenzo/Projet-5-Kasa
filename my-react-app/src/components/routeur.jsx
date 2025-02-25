@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "../pages/Home";
 import Erreur from "../pages/Erreur";
 import About from "../pages/About";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./Header";
+import Footer from "./Footer";
 import Logement from "../pages/Logement";
 
 export default function Routeur() {

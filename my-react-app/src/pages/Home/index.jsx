@@ -1,5 +1,5 @@
-import Banner from "../../components/banner";
-import Card from "../../components/card";
+import Banner from "../../components/Banner";
+import Card from "../../components/Card";
 import logements from "../../logements.json";
 import "../../style/Home/Home.scss";
 import falaises_banner from "../../images/falaises_banner.png";
