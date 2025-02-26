@@ -1,3 +1,6 @@
+@use "../Outils/Mixins.scss";
+@use "../Outils/Variables.scss";
+
 .logement__contenu {
     display: flex;
     flex-direction: row;

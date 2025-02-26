@@ -1,3 +1,6 @@
+@use "../Outils/Mixins.scss";
+@use "../Outils/Variables.scss";
+
 .grille {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
