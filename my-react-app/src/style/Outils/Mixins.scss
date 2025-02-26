@@ -12,8 +12,9 @@
     grid-template-columns: $colums;
     gap: $gap;
 }
-@mixin BorderRadius($radius) {
+@mixin BorderRadiusetObjectFitCover($radius) {
     border-radius: $radius;
+    object-fit: cover;
 }
 @mixin WidthHeight($width, $height) {
     width: $width;
@@ -22,6 +23,26 @@
 @mixin FontSizeWeight($size, $weight) {
     font-size: $size;
     font-weight: $weight;
+}
+@mixin FontSizeMarginTop($size, $margin) {
+    font-size: $size;
+    margin-top: $margin;
+}
+@mixin FontSizeWidth($size, $width) {
+    font-size: $size;
+    width: $width;
+}
+@mixin ColorTextAlign($color, $align) {
+    color: $color;
+    text-align: $align;
+}
+@mixin ColorTextDecoration($color, $decoration) {
+    color: $color;
+    text-decoration: $decoration;
+}
+@mixin BackgroundPadding($bg-color, $padding) {
+    background-color: $bg-color;
+    padding: $padding;
 }
 @mixin PositionAbsolute($top, $left) {
     position: absolute;

@@ -1,5 +1,5 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -19,8 +19,7 @@ body {
 }
 .main {
     margin: 50px 100px;
-    display: flex;
-    flex-direction: column;
+    @include mixins.DisplayFlex(column, 0);
     @media (max-width: 768px) {
         margin: 20px;
     }

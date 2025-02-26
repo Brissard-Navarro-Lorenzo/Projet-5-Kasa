@@ -1,14 +1,11 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 .span {
-    color: #ffffff;
-    background-color: #ff6060;
+    @include mixins.ColorTextAlign(white, center);
+    @include mixins.BackgroundPadding(vars.$Couleur-principale-rouge, 3px 20px);
+    @include mixins.FontSizeWeight(14px, 700);
     border-radius: 10px;
-    padding: 3px 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
     margin-right: 15px;
     margin-top: 8px;
 }

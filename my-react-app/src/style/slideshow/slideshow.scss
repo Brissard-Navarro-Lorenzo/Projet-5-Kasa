@@ -1,5 +1,5 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 .slideshow {
     position: relative;
@@ -12,14 +12,11 @@
     &__img {
         min-width: 100%;
         height: 415px;
-        object-fit: cover;
-        border-radius: 25px;
+        @include mixins.BorderRadiusetObjectFitCover(25px);
     }
     &__nombre {
         font-size: 18px;
-        position: absolute;
-        left: 50%;
-        top: 90%;
+        @include mixins.PositionAbsolute(90%, 50%);
         transform: translate(-50%, -50%);
     }
     &__prev {

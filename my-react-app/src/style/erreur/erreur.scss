@@ -1,18 +1,14 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 .erreur {
-    text-align: center;
-    color: #ff6060;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+    @include mixins.DisplayFlex(column, 80px);
+    @include mixins.ColorTextAlign(vars.$Couleur-principale-rouge, center);
     margin-bottom: 80px;
     .erreur__title {
         font-size: 288px;
         @media (max-width: 768px) {
-            font-size: 96px;
-            margin-top: 80px;
+            @include mixins.FontSizeMarginTop(96px, 80px);
         }
     }
     .erreur__message {
@@ -23,8 +19,7 @@
     }
     .erreur__link {
         font-size: 18px;
-        color: #000000;
-        text-decoration: underline;
+        @include mixins.ColorTextDecoration(vars.$Couleur-noir, underline);
         @media (max-width: 768px) {
             font-size: 14px;
         }

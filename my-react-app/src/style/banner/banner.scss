@@ -1,5 +1,5 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 .banner {
     height: 223px;
@@ -11,22 +11,18 @@
         border-radius: 10px;
     }
     &__img {
-        height: 100%;
-        width: 100%;
-        border-radius: 25px;
-        object-fit: cover;
+        @include mixins.WidthHeight(100%, 100%);
+        @include mixins.BorderRadiusetObjectFitCover(25px);
         filter: brightness(0.4);
         @media (max-width: 768px) {
             border-radius: 10px;
         }
     }
     &__title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        @include mixins.PositionAbsolute(50%, 50%);
         transform: translate(-50%, -50%);
         z-index: 1;
-        color: white;
+        color: vars.$Couleur-blanc;
         font-size: 48px;
         max-width: 100%;
         white-space: nowrap;

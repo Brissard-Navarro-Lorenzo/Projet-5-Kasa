@@ -1,10 +1,9 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include mixins.DisplayFlex(row, 0);
+    @include mixins.AlignJustify(center, space-between);
     margin: 30px 100px;
     @media (max-width: 768px) {
         margin: 20px;
@@ -17,8 +16,7 @@
     .navbar {
         &__link {
             margin-left: 30px;
-            text-decoration: none;
-            color: black;
+            @include mixins.ColorTextDecoration(vars.$Couleur-noir, none);
             font-size: 24px;
             transition: 0.3s ease;
             @media (max-width: 768px) {
@@ -30,7 +28,7 @@
                 text-decoration: underline;
             }
             &:hover {
-                color: #ff6060;
+                color: vars.$Couleur-principale-rouge;
             }
         }
     }

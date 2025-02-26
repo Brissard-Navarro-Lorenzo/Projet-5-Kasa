@@ -1,17 +1,14 @@
-@use "../Outils/Mixins.scss";
-@use "../Outils/Variables.scss";
+@use "../Outils/Mixins.scss" as mixins;
+@use "../Outils/Variables.scss" as vars;
 
 .collapse {
     &__header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #ff6060;
+        @include mixins.DisplayFlex(row, 0);
+        @include mixins.AlignJustify(center, space-between);
+        @include mixins.BackgroundPadding(vars.$Couleur-principale-rouge, 10px 20px 10px 15px);
         border-radius: 5px;
         color: #fff;
         line-height: 34px;
-        padding: 10px 20px 10px 15px;
         & h2 {
             @media (max-width: 768px) {
                 font-size: 13px;
@@ -31,11 +28,10 @@
     }
 
     &__content {
-        background-color: #f1f1f1;
+        @include mixins.BackgroundPadding(vars.$Couleur-gris-clair, 0 18px);
         font-size: 16px;
         overflow: hidden;
         transition: height 0.3s ease-out, padding 0.3s ease-out;
-        padding: 0 18px;
         transform-origin: top;
         height: 0;
         &--ouvert {
