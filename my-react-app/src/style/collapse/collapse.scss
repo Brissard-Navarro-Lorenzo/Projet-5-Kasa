@@ -34,6 +34,9 @@
         transition: height 0.3s ease-out, padding 0.3s ease-out;
         transform-origin: top;
         height: 0;
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
         &--ouvert {
             padding: 12px 18px;
             height: auto;
