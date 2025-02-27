@@ -20,12 +20,10 @@ export default function Slideshow({ tableau_images, alt }) {
                 ))}
             </div>
             <i
-                className={`fa-solid fa-chevron-left slideshow__prev ${tailleTableau <= 1 || index === 0 ? "slideshow__none" : ""}`}
+                className={`fa-solid fa-chevron-left slideshow__prev ${tailleTableau <= 1 ? "slideshow__none" : ""}`}
                 onClick={diminuerIndex}></i>
             <i
-                className={`fa-solid fa-chevron-right slideshow__next ${
-                    tailleTableau <= 1 || index === tailleTableau - 1 ? "slideshow__none" : ""
-                }`}
+                className={`fa-solid fa-chevron-right slideshow__next ${tailleTableau <= 1 ? "slideshow__none" : ""}`}
                 onClick={augmenterIndex}></i>
             <p className={`slideshow__nombre ${tailleTableau <= 1 ? "slideshow__none" : ""}`}>{`${index + 1}/${tailleTableau}`}</p>
         </section>

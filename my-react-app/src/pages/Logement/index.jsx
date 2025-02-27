@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams, Navigate } from "react-router";
 import logements from "../../logements.json";
 import Collapse from "../../components/Collapse";
 import "../../style/Logement/Logement.scss";
@@ -9,6 +9,9 @@ import Slideshow from "../../components/Slideshow";
 export default function Logement() {
     const { id } = useParams();
     const logementEnCours = logements.find((logement) => logement.id === id);
+    if (!logementEnCours) {
+        return <Navigate to="/404" replace={true} />;
+    }
     const note = parseInt(logementEnCours.rating);
 
     return (

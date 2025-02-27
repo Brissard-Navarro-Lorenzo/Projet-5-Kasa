@@ -1,7 +1,7 @@
 @use "../Outils/Mixins.scss" as mixins;
 @use "../Outils/Variables.scss" as vars;
 
-.grille {
+.gallery {
     @include mixins.DisplayGrid(repeat(3, 1fr), 20px);
     @include mixins.BackgroundPadding(vars.$Couleur-gris-clair, 55px 50px);
     border-radius: 25px;

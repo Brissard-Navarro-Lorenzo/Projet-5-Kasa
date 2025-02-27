@@ -1,9 +1,7 @@
 import Banner from "../../components/Banner";
-import Card from "../../components/Card";
 import logements from "../../logements.json";
-import "../../style/Home/Home.scss";
 import falaises_banner from "../../images/falaises_banner.png";
-import { Link } from "react-router";
+import Gallery from "../../components/Gallery";
 
 export default function Home() {
     const alt = "Falaises en bord de mer";
@@ -11,13 +9,7 @@ export default function Home() {
     return (
         <main className="main">
             <Banner img={falaises_banner} alt={alt} titre={titre} />
-            <section className="grille">
-                {logements.map((logement) => (
-                    <Link to={`/logement/${logement.id}`} key={logement.id}>
-                        <Card image={logement.cover} titre={logement.title} />
-                    </Link>
-                ))}
-            </section>
+            <Gallery liste={logements} />
         </main>
     );
 }
